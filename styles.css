@@ -1,0 +1,113 @@
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: #fff;
+  color: #4a556c;
+  text-align: center;
+  padding: 1em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+}
+.material-symbols-outlined {
+  width: 24.72px;
+  height: 22.49px;
+  background: linear-gradient(
+      30deg,
+      #fff 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #fff 87.5%,
+      #fff
+    ),
+    linear-gradient(
+      150deg,
+      #fff 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #fff 87.5%,
+      #fff
+    ),
+    #20ad96;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  padding: 10px;
+  color: #fff;
+  border-radius: 12px; /* Adjust the border radius as needed */
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar li {
+  margin: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #4a556c;
+  font-weight: thin;
+}
+.navbarItem {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.cta-button {
+  background-color: #20ad96;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main {
+  padding: 2em;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Media Query for Mobile Responsive */
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbarItem {
+    flex-direction: column;
+    align-items: start;
+  }
+}
